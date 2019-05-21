@@ -8,78 +8,48 @@
 
 const path = require('path')
 
-const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
-  // Query for nodes to use in creating pages.
-  resolve(
-    graphql(request).then(result => {
-      if (result.errors){
-        reject(result.errors)
-      }
-
-      return result;
-    })
-  )
-});
-
-// Impletement the Gatsby API "createPages". This is called once the
-// data layer is bootstrapped to let plugins create pages from data.
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
-
-  // QUERY FOR URL ARTICLES
-  const getArticles = makeRequest(graphql, `
-    {
-      allStrapiArticle {
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  return graphql(
+    // on fait une requete avec allMarkdownRemark
+    `
+     {
+       allMarkdownRemark(sort: { fields: [frontmatter___date]
+      , order: DESC }) {
         edges {
           node {
-            id
+            frontmatter {
+              slug
+              title
+            }
           }
         }
       }
-    }
-  `).then(result => {
-    // create pages for each article.
-    result.data.allStrapiArticle.edges.forEach(({ node }) => {
+     }
+    `
+    // une fois la requete effectuée on récupere une promesse, avec le then on passe à l'étape supérieure
+  ).then(result => {
+    console.log(JSON.stringify(result, null, 2))
+    // pour la facilité de lecture on stocke toutes les informations dans la variable post
+    const posts = result.data.allMarkdownRemark.edges
+
+    // puis pour chaque posts trouvés, on va createPage par posts
+    posts.forEach((post, index) => {
+      const prev = index === posts.length - 1 ? null : posts[index + 1].node
+      const next = index === 0 ? null : posts[index - 1].node
+
       createPage({
-        path: `/${node.id}`,
-        component: path.resolve(`src/templates/article.js`),
+        // adresse URL de la page
+        path: post.node.frontmatter.slug,
+        // template de la page (il faut créer un dossier template dans source)
+        component: path.resolve(`./src/templates/post.js`),
+        // donner une information dans la page
         context: {
-          id: node.id,
+          slug: post.node.frontmatter.slug,
+          next,
+          prev
         },
       })
     })
-  });
-
-  // QUERY FOR URL AUTHORS
-  const getAuthors = makeRequest(graphql, `
-  {
-    allStrapiUser {
-      edges {
-        node {
-          id
-        }
-      }
-    }
-  }
-  `).then(result => {
-  // Create pages for each user.
-    result.data.allStrapiUser.edges.forEach(({ node }) => {
-      createPage({
-        path: `/authors/${node.id}`,
-        component: path.resolve(`src/templates/user.js`),
-        context: {
-          id: node.id,
-        },
-      })
-    })
-  });
-
-
-
-
-  // Query for articles and authors nodes to use in creating pages.
-  return Promise.all([
-    getArticles,
-    getAuthors
-  ])
-};
+  })
+}

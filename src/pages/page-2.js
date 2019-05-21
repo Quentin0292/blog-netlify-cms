@@ -1,9 +1,13 @@
-import React from "react"
+import React, { Component } from 'react'
 
-const SecondPage = () => (
-  <div>
-    <h1>Hello</h1>
-  </div>
-)
+class SecondPage extends Component {
+  render () {
+    return (
+      <div>
+        Hello Seconde Page
+      </div>
+    )
+  }
+}
 
 export default SecondPage

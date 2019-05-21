@@ -32,6 +32,7 @@ class Bio extends React.Component {
           Personal blog by{' '}
           <a href="https://mobile.twitter.com/quentinlecocq1"
             target="_blank"
+            rel="noopener noreferrer"
             style={{
               textDecoration: 'none',
               color: 'var(--textLink)',
