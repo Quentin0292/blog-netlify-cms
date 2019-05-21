@@ -86,7 +86,6 @@ class Layout extends React.Component {
             }}
           >
             {this.renderHeader()}
-            <span>{description}</span>
           </header>
           {children}
         </div>

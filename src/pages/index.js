@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import get from 'lodash/get'
 import Layout from '../components/Layout'
+import Bio from '../components/Bio'
 import { rhythm } from "../utils/typography";
 import '../utils/global.css'
 
@@ -12,6 +13,9 @@ class IndexPage extends React.Component {
     const posts = get(this, 'props.data.allStrapiArticle.edges' );
     return (
       <Layout location={this.props.location} title={siteTitle} description={description}>
+        <aside>
+          <Bio />
+        </aside>
         <main>
           <ul>
             {posts.map(document => {
