@@ -3,8 +3,8 @@ import get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { rhythm } from "../utils/typography";
 import '../utils/global.css'
-import Layout from '../components/Layout';
-import Bio from '../components/Bio';
+import Layout from '../components/layout';
+import Bio from '../components/bio';
 import SEO from '../components/seo';
 
 
