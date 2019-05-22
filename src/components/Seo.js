@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
 const querySeo = graphql`
-  query GetSiteMetadata {
+  query {
     site {
       siteMetadata {
         title
