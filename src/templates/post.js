@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
 import { formatReadingTime, formatPostDate } from '../utils/helpers'
 import SEO from '../components/seo';
-import Bio from '../components/Bio';
+import Bio from '../components/bio';
 
 
 export default ({ data, pageContext }) => {
