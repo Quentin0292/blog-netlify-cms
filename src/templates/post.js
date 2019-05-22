@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import { formatReadingTime, formatPostDate } from '../utils/helpers'
-import SEO from '../components/seo';
-import Bio from '../components/bio';
+import Seo from '../components/Seo';
+import Bio from '../components/Bio';
 
 
 export default ({ data, pageContext }) => {
@@ -19,7 +19,7 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout location='post' title={siteTitle}>
-        <SEO
+        <Seo
           title={titlePage}
           description={post.frontmatter.spoiler}
           slug={post.frontmatter.slug} />

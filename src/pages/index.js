@@ -3,9 +3,9 @@ import get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { rhythm } from "../utils/typography";
 import '../utils/global.css'
-import Layout from '../components/layout';
-import Bio from '../components/bio';
-import SEO from '../components/seo';
+import Layout from '../components/Layout';
+import Bio from '../components/Bio';
+import Seo from '../components/Seo';
 
 
 class IndexPage extends React.Component {
@@ -15,7 +15,7 @@ class IndexPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO />
+        <Seo />
         <aside>
           <Bio />
         </aside>
