@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import { formatReadingTime, formatPostDate } from '../utils/helpers'
-import Seo from '../components/Seo';
 import Bio from '../components/Bio';
 
 
@@ -13,16 +12,10 @@ export default ({ data, pageContext }) => {
   const html = data.markdownRemark.html
   const articleDate = data.markdownRemark.frontmatter.date
   const timeToRead = data.markdownRemark.timeToRead
-  const titlePage = data.markdownRemark.frontmatter.title
-  const post = data.markdownRemark
   const { prev, next } = pageContext;
 
   return (
     <Layout location='post' title={siteTitle}>
-        <Seo
-          title={titlePage}
-          description={post.frontmatter.spoiler}
-          slug={post.frontmatter.slug} />
         <main>
           <article>
             <header>

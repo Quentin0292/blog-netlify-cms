@@ -5,7 +5,7 @@ import { rhythm } from "../utils/typography";
 import '../utils/global.css'
 import Layout from '../components/Layout';
 import Bio from '../components/Bio';
-import Seo from '../components/Seo';
+
 
 
 class IndexPage extends React.Component {
@@ -15,7 +15,6 @@ class IndexPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Seo />
         <aside>
           <Bio />
         </aside>
