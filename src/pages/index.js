@@ -5,17 +5,17 @@ import { rhythm } from "../utils/typography";
 import '../utils/global.css'
 import Layout from '../components/Layout';
 import Bio from '../components/Bio';
+import SEO from '../components/seo';
 
 
 class IndexPage extends React.Component {
   render(){
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    const description = get(this, 'props.data.site.siteMetadata.description');
-
 
     return (
-      <Layout location={this.props.location} title={siteTitle} description={description}>
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO />
         <aside>
           <Bio />
         </aside>

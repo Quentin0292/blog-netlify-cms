@@ -4,7 +4,7 @@ module.exports = {
     author: `Quentin Lecocq`,
     description: `Personnal blog by Quentin Lecocq.`,
     social: {
-      twitter: '@qlecocq1',
+      twitter: '@quentinlecocq1',
     }
   },
   plugins: [

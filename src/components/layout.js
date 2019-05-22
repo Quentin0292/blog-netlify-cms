@@ -13,7 +13,7 @@ class Layout extends React.Component {
       return (
         <h1
           style={{
-            ...scale(0.75),
+            ...scale(1),
             fontFamily: 'Work Sans, sans-serif',
             marginBottom: 0,
             marginTop: 0,
@@ -47,6 +47,7 @@ class Layout extends React.Component {
               boxShadow: 'none',
               textDecoration: 'none',
               color: 'rgb(255, 167, 196)',
+              ...scale(3/5),
             }}
             to={'/'}
           >
@@ -59,7 +60,6 @@ class Layout extends React.Component {
 
   render(){
     const { children } = this.props;
-    const { description } = this.props;
     return (
       <div
         style={{
