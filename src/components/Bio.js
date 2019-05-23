@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../assets/profilePic.png';
+import profilePic from '../assets/profilePic2.jpg';
 import { rhythm, scale } from '../utils/typography';
 import '../utils/global.css'
 import '../utils/typography';
@@ -21,8 +21,8 @@ class Bio extends React.Component {
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
+            width: rhythm(3),
+            height: rhythm(3),
             borderRadius: '50%',
             ...scale(0.3)
           }}

@@ -27,14 +27,14 @@ class IndexPage extends React.Component {
                   <article
                     style={{
                       listStyle: 'none',
-                      marginBottom: rhythm(2.5)
+                      marginBottom: rhythm(2.8)
                     }}
                     key={document.node.id}>
                     <h3
                       style={{
                         fontFamily: 'Cabin Condensed, sans-serif',
                         fontWeight: 'bold',
-                        fontSize: rhythm(1.5),
+                        fontSize: rhythm(1.7),
                         marginBottom: rhythm(1/4),
                       }}
                     ><Link
@@ -48,12 +48,15 @@ class IndexPage extends React.Component {
                     </h3>
                     <small
                       style={{
-                        fontFamily: 'Quattrocento Sans, sans-serif'
+                        fontFamily: 'Quattrocento Sans, sans-serif',
+                        fontSize: rhythm(.62)
                       }}
                     >{formatPostDate(document.node.frontmatter.date)}{` • ${formatReadingTime(document.node.timeToRead)} `}</small>
                     <p
                     style={{
-                      fontFamily: 'Quattrocento Sans, sans-serif'
+                      fontFamily: 'Quattrocento Sans, sans-serif',
+                      fontWeight: 'bold',
+                      lineHeight: 1.8
                     }}>{document.node.excerpt}</p>
                   </article>
                 )

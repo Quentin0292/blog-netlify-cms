@@ -8,7 +8,7 @@ body {
   --header: var(--blue);
   --textNormal: #222;
   --textTitle: #326273;
-  --textLink: #E39774;
+  --textLink: #D54F5A;
   --hr: hsla(0, 0%, 0%, 0.2);
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
   --inlineCode-text: #1a1a1a;

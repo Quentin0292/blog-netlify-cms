@@ -29,7 +29,7 @@ export default ({ data, pageContext }) => {
                 }}
               >
                 <h1 style={{
-                  color: 'var(--blue',
+                  color: 'var(--textNormal)',
                   ...scale(2.8),
                   fontFamily: 'Cabin Condensed, sans-serif'}}>{articleTitle}</h1>
                 <p
@@ -58,16 +58,17 @@ export default ({ data, pageContext }) => {
             }}></div>
             <h3
               style={{
-                fontFamily: 'Work Sans, sans-serif',
+                fontFamily: 'Permanent Marker, sans-serif',
                 marginTop: rhythm(0.25),
+                marginBottom: rhythm(1.1)
             }}
             >
               <Link to={'/'}
                 style={{
                   boxShadow: 'none',
                   textDecoration: 'none',
-                  color: 'var(--pink)',
-                  ...scale(3/5)
+                  color: 'var(--textLink)',
+                  ...scale(2)
                 }}
               >Devlife</Link>
             </h3>
@@ -87,9 +88,10 @@ export default ({ data, pageContext }) => {
                     style={{
                       marginRight: 20,
                       color: 'var(--textLink)',
-                      fontFamily: 'Quattrocento Sans, sans-serif',
-                      ...scale(1/5),
+                      fontFamily: 'Cabin Condensed, sans-serif',
+                      ...scale(2/5),
                       textDecoration: 'none',
+                      fontWeight: 'bold',
                     }}>
                     ← {prev.frontmatter.title}
                   </Link>
@@ -100,9 +102,10 @@ export default ({ data, pageContext }) => {
                   <Link to={`/${next.frontmatter.slug}`} rel="next"
                     style={{
                       color: 'var(--textLink)',
-                      fontFamily: 'Quattrocento Sans, sans-serif',
-                      ...scale(1/5),
+                      fontFamily: 'Cabin Condensed, sans-serif',
+                      ...scale(2/5),
                       textDecoration: 'none',
+                      fontWeight: 'bold',
                     }}
                   >
                     {next.frontmatter.title} →
