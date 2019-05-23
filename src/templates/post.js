@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import { formatReadingTime, formatPostDate } from '../utils/helpers'
 import Bio from '../components/Bio';
+import Seo from '../components/Seo';
 
 
 export default ({ data, pageContext }) => {
@@ -12,10 +13,12 @@ export default ({ data, pageContext }) => {
   const html = data.markdownRemark.html
   const articleDate = data.markdownRemark.frontmatter.date
   const timeToRead = data.markdownRemark.timeToRead
+  const excerpt = data.markdownRemark.excerpt
   const { prev, next } = pageContext;
 
   return (
     <Layout location='post' title={siteTitle}>
+      <Seo title={articleTitle} description={excerpt} />
         <main>
           <article>
             <header>
