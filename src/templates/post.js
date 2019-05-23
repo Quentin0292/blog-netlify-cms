@@ -24,13 +24,14 @@ export default ({ data, pageContext }) => {
             <header>
               <div
                 style={{
-                  fontFamily: 'Quattrocento Sans, sans-serif'
+                  fontFamily: 'Cabin Condensed, sans-serif',
+                  marginBottom: rhythm(3)
                 }}
               >
                 <h1 style={{
-                  color: 'var(--textTitle)',
-                  ...scale(1.6),
-                  fontFamily: 'Work Sans, sans-serif'}}>{articleTitle}</h1>
+                  color: 'var(--blue',
+                  ...scale(2.8),
+                  fontFamily: 'Cabin Condensed, sans-serif'}}>{articleTitle}</h1>
                 <p
                   style={{
                     ...scale(-1/5),
@@ -42,7 +43,8 @@ export default ({ data, pageContext }) => {
               </div>
             </header>
             <div style={{
-              fontFamily: 'Quattrocento Sans, sans-serif',
+              fontFamily: 'Cabin Condensed, sans-serif',
+              fontSize: '1.3em',
               lineHeight: '2.75rem'
               }} dangerouslySetInnerHTML={{ __html: html }} />
             <footer>

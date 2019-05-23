@@ -38,9 +38,8 @@ class Bio extends React.Component {
             style={{
               textDecoration: 'none',
               color: 'var(--textLink)',
-              borderBottom: '1px solid var(--textLink)',
             }}
-          > Quentin Lecocq</a>.
+          > Quentin Lecocq</a>
         </p>
       </div>
     )

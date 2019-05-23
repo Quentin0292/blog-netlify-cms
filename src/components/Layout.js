@@ -3,6 +3,7 @@ import { rhythm, scale } from '../utils/typography';
 import { Link } from 'gatsby';
 import '../utils/global.css'
 
+
 class Layout extends React.Component {
 
   renderHeader(){
@@ -13,8 +14,8 @@ class Layout extends React.Component {
       return (
         <h1
           style={{
-            ...scale(1),
-            fontFamily: 'Work Sans, sans-serif',
+            ...scale(3),
+            fontFamily: 'Permanent Marker, sans-serif',
             marginBottom: 0,
             marginTop: 0,
           }}
@@ -35,7 +36,7 @@ class Layout extends React.Component {
       return (
         <h3
           style={{
-            fontFamily: 'Work Sans, sans-serif',
+            fontFamily: 'Permanent Marker, sans-serif',
             marginTop: 0,
             marginBottom: 0,
             height: 42, // because
@@ -46,8 +47,8 @@ class Layout extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'rgb(255, 167, 196)',
-              ...scale(3/5),
+              color: 'var(--textTitle)',
+              ...scale(2.3),
             }}
             to={'/'}
           >

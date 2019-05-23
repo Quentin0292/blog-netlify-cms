@@ -6,10 +6,10 @@ import '../utils/global.css'
 import Layout from '../components/Layout';
 import Bio from '../components/Bio';
 import Seo from '../components/Seo';
-
-
+import { formatReadingTime, formatPostDate } from '../utils/helpers'
 
 class IndexPage extends React.Component {
+
   render(){
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -27,12 +27,14 @@ class IndexPage extends React.Component {
                   <article
                     style={{
                       listStyle: 'none',
+                      marginBottom: rhythm(2.5)
                     }}
                     key={document.node.id}>
                     <h3
                       style={{
-                        fontFamily: 'Work Sans, sans-serif',
-                        fontSize: rhythm(1),
+                        fontFamily: 'Cabin Condensed, sans-serif',
+                        fontWeight: 'bold',
+                        fontSize: rhythm(1.5),
                         marginBottom: rhythm(1/4),
                       }}
                     ><Link
@@ -41,12 +43,18 @@ class IndexPage extends React.Component {
                         boxShadow: 'none',
                         color: 'var(--textLink)',
                       }}
-                      to={`/${document.node.frontmatter.slug}`}>{document.node.frontmatter.title}</Link></h3>
+                      to={`/${document.node.frontmatter.slug}`}>{document.node.frontmatter.title}
+                      </Link>
+                    </h3>
+                    <small
+                      style={{
+                        fontFamily: 'Quattrocento Sans, sans-serif'
+                      }}
+                    >{formatPostDate(document.node.frontmatter.date)}{` • ${formatReadingTime(document.node.timeToRead)} `}</small>
                     <p
                     style={{
                       fontFamily: 'Quattrocento Sans, sans-serif'
                     }}>{document.node.excerpt}</p>
-                    <hr/>
                   </article>
                 )
               })
@@ -68,6 +76,7 @@ export const pageQuery = graphql`
           id
           html
           excerpt
+          timeToRead
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")

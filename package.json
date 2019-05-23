@@ -24,7 +24,9 @@
     "react-markdown": "^4.0.8",
     "typography": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-irving": "^0.16.19",
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "prettier": "^1.17.1"

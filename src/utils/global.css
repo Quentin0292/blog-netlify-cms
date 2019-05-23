@@ -1,14 +1,14 @@
 body {
-  --pink: rgb(255, 167, 196);
+  --blue: #5C9EAD;
   background-color: var(--bg);
 }
 
 body {
-  --bg: #ffffff;
-  --header: var(--pink);
+  --bg: #EEEEEE;
+  --header: var(--blue);
   --textNormal: #222;
-  --textTitle: rgb(34, 34, 34);
-  --textLink: #d23669;
+  --textTitle: #326273;
+  --textLink: #E39774;
   --hr: hsla(0, 0%, 0%, 0.2);
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
   --inlineCode-text: #1a1a1a;
