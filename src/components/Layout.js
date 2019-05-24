@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import '../utils/global.css'
 
 
+
 class Layout extends React.Component {
 
   renderHeader(){
@@ -24,7 +25,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'var(--textTitle)',
+              color: 'black',
             }}
             to={'/'}
           >

@@ -7,6 +7,10 @@ import Layout from '../components/Layout';
 import Bio from '../components/Bio';
 import Seo from '../components/Seo';
 import { formatReadingTime, formatPostDate } from '../utils/helpers'
+import 'typeface-cabin-condensed';
+import 'typeface-quattrocento-sans';
+import 'typeface-permanent-marker';
+
 
 class IndexPage extends React.Component {
 
@@ -56,7 +60,8 @@ class IndexPage extends React.Component {
                     style={{
                       fontFamily: 'Quattrocento Sans, sans-serif',
                       fontWeight: 'bold',
-                      lineHeight: 1.8
+                      lineHeight: 1.8,
+                      fontSize: rhythm(.8)
                     }}>{document.node.excerpt}</p>
                   </article>
                 )

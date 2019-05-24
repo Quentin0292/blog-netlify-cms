@@ -7,6 +7,7 @@ import Bio from '../components/Bio';
 import Seo from '../components/Seo';
 
 
+
 export default ({ data, pageContext }) => {
   const siteTitle = data.site.siteMetadata.title
   const articleTitle = data.markdownRemark.frontmatter.title
