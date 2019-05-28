@@ -5,10 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "antd": "^3.19.1",
     "gatsby": "^2.5.2",
     "gatsby-image": "^2.1.0",
-    "gatsby-plugin-antd": "^2.0.2",
     "gatsby-plugin-less": "^2.0.13",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-netlify-cms": "^4.0.1",
@@ -20,7 +18,6 @@
     "gatsby-source-filesystem": "^2.0.36",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
-    "less": "^3.9.0",
     "lodash": "^4.17.11",
     "netlify-cms": "^2.9.1",
     "prop-types": "^15.7.2",
@@ -34,8 +31,7 @@
     "typography": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19",
     "typography-theme-irving": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19",
-    "webfontloader": "^1.6.28"
+    "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.17.1"

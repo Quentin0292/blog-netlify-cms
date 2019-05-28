@@ -9,6 +9,11 @@ tags: ['one', 'two', 'three']
 
 There are four main ways to get started with Gatsby:
 
+# Deuxieme titter
+
+
+## Troisieme titre 
+
 Tutorial: The tutorial is written to be as accessible as possible to people without much web development experience.
 Quick start: The quick start is intended for intermediate to advanced developers who prefer to dig straight in.
 Recipes: A happy medium between the tutorial and the quick start, find some quick answers for how to accomplish some specific, common tasks with Gatsby.

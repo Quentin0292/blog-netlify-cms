@@ -3,9 +3,9 @@ export function formatReadingTime(minutes){
   if (cups > 5) {
     return `${new Array(Math.round(cups / Math.E))
       .fill('🍱')
-      .join('')} ${minutes} min read`;
+      .join('')} ${minutes} min de lecture`;
   } else {
-    return `${new Array(cups || 1).fill('☕️').join('')} ${minutes} min read`;
+    return `${new Array(cups || 1).fill('☕️').join('')} ${minutes} min de lecture`;
   }
 }
 

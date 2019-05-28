@@ -1,58 +1,42 @@
 import React from 'react';
 import profilePic from '../assets/profilePic2.jpg';
 import { rhythm } from '../utils/typography';
-import '../utils/global.css'
-import '../utils/typography';
-import { StaticQuery, graphql } from 'gatsby'
-import { List, Avatar } from 'antd'
 
+class Bio extends React.Component {
+  render() {
+    return (
+      <div
+        style={{
+          display: 'flex',
+          marginBottom: rhythm(2),
+          fontFamily: 'Quattrocento Sans, sans-serif',
+        }}
+      >
+        <img
+          src={profilePic}
+          alt={`Quentin Lecocq`}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            width: rhythm(2.5),
+            height: rhythm(2.5),
+            borderRadius: '50%',
+          }}
+        />
+        <p style={{ maxWidth: 310 }}>
+          Blog personnel de{' '}
+          <a
+            style={{
+              textDecoration: 'none',
+              boxShadow: 'none',
+              color: 'var(--textLink)',
+              fontWeight: 'bold',
+            }}
+            href="https://mobile.twitter.com/quentinlecocq1">Quentin Lecocq</a>.
+        </p>
+      </div>
+    );
+  }
+}
 
-
-const Bio = () => (
-  <StaticQuery
-    query={
-      graphql`
-        query {
-          site {
-            siteMetadata {
-              author
-              description
-              title
-            }
-          }
-        }
-      `
-    }
-    render={data => (
-      <>
-        <List.Item style={{
-          marginBottom: rhythm(1.5),
-        }}>
-          <List.Item.Meta
-            avatar={
-              <Avatar
-                size={64}
-                src={profilePic}
-              />
-            }
-            title={<a href="https://mobile.twitter.com/quentinlecocq1"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: 'var(--textLink)',
-                fontSize: rhythm(1.1),
-              }}
-              >{data.site.siteMetadata.author}</a>}
-            description={<p
-              style={{
-                color: 'var(--textNormal)'
-              }}
-            >{data.site.siteMetadata.description}</p>}
-          />
-        </List.Item>
-      </>
-    )}
-  />
-)
-
-export default Bio
+export default Bio;

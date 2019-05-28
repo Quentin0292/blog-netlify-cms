@@ -42,9 +42,10 @@ export default ({ data, pageContext }) => {
               </div>
             </header>
             <div style={{
-              fontFamily: 'Cabin Condensed, sans-serif',
+              fontFamily: 'Quattrocento Sans, sans-serif',
               fontSize: '1.3em',
-              lineHeight: '2.75rem'
+              lineHeight: '2.75rem',
+              color: 'var(--textNormal)'
               }} dangerouslySetInnerHTML={{ __html: html }} />
           </article>
         </main>
