@@ -44,7 +44,11 @@ const Bio = () => (
                 fontSize: rhythm(1.1),
               }}
               >{data.site.siteMetadata.author}</a>}
-            description={data.site.siteMetadata.description}
+            description={<p
+              style={{
+                color: 'var(--textNormal)'
+              }}
+            >{data.site.siteMetadata.description}</p>}
           />
         </List.Item>
       </>
