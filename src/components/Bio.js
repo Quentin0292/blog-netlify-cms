@@ -1,12 +1,11 @@
 import React from 'react';
 import profilePic from '../assets/profilePic2.jpg';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
 import '../utils/global.css'
 import '../utils/typography';
 import { StaticQuery, graphql } from 'gatsby'
-import { List, Avatar, Card } from 'antd'
+import { List, Avatar } from 'antd'
 
-const { Meta } = Card;
 
 
 const Bio = () => (
