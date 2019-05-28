@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import { rhythm, scale } from '../utils/typography'
-import { formatReadingTime, formatPostDate } from '../utils/helpers'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import { rhythm, scale } from '../utils/typography';
+import { formatReadingTime, formatPostDate } from '../utils/helpers';
 import Bio from '../components/Bio';
 import Seo from '../components/Seo';
 
