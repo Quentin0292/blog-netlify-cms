@@ -6,8 +6,6 @@ import { formatReadingTime, formatPostDate } from '../utils/helpers'
 import Bio from '../components/Bio';
 import Seo from '../components/Seo';
 
-
-
 export default ({ data, pageContext }) => {
   const siteTitle = data.site.siteMetadata.title
   const articleTitle = data.markdownRemark.frontmatter.title
@@ -48,8 +46,6 @@ export default ({ data, pageContext }) => {
               fontSize: '1.3em',
               lineHeight: '2.75rem'
               }} dangerouslySetInnerHTML={{ __html: html }} />
-            <footer>
-            </footer>
           </article>
         </main>
         <aside>

@@ -7,6 +7,7 @@
 // You can delete this file if you're not using it
 
 const path = require('path')
+const _ = require("lodash")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -21,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
             frontmatter {
               slug
               title
+              tags
             }
           }
         }

@@ -4,11 +4,11 @@ body {
 }
 
 body {
-  --bg: #EEEEEE;
+  --bg: #424B54;
   --header: var(--blue);
-  --textNormal: #222;
+  --textNormal: #FFFFFF;
   --textTitle: #326273;
-  --textLink: #D54F5A;
+  --textLink: #E2A1AE;
   --hr: hsla(0, 0%, 0%, 0.2);
   --inlineCode-bg: rgba(255, 229, 100, 0.2);
   --inlineCode-text: #1a1a1a;
@@ -16,6 +16,7 @@ body {
 
 img {
   width: 100%;
+  border-radius: 5px;
 }
 
 blockquote {

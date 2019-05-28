@@ -2,13 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `Devlife`,
     author: `Quentin Lecocq`,
-    description: `Personnal blog by Quentin Lecocq.`,
+    description: `Dev JavaScript | React | Autodidacte. J'en apprend un peu plus chaque jour et le retranscrit dans ces articles.`,
     social: {
       twitter: '@quentinlecocq1',
     }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-antd',
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,

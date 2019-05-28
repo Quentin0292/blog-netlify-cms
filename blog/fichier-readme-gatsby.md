@@ -2,6 +2,7 @@
 slug: read-me-gatsby
 date: 2019-05-23T08:02:54.168Z
 title: Fichier ReadMe Gatsby
+tags: ["photo", "test", "foo"]
 ---
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 

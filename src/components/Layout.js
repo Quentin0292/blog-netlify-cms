@@ -19,13 +19,15 @@ class Layout extends React.Component {
             fontFamily: 'Permanent Marker, sans-serif',
             marginBottom: 0,
             marginTop: 0,
+            marginLeft: 'auto',
+            marginRight: 'auto',
           }}
         >
           <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'black',
+              color: '#ffffff',
             }}
             to={'/'}
           >
@@ -39,7 +41,9 @@ class Layout extends React.Component {
           style={{
             fontFamily: 'Permanent Marker, sans-serif',
             marginTop: 0,
-            marginBottom: 0,
+            marginBottom: rhythm(2),
+            marginLeft: 'auto',
+            marginRight: 'auto',
             height: 42, // because
             lineHeight: '2.625rem',
           }}
