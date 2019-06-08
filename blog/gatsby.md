@@ -8,8 +8,9 @@ tags: ['']
 ![fkff](/../public/assets/emile-perron-190221-unsplash.jpg)
 <br>
 ## Pourquoi le blog ?
-<br>
-* Pour apprendre et comprendre de nouvelles choses; 
+
+
+* Pour apprendre et comprendre de nouvelles choses;
 * Pour acquérir la capacité d’expliquer “simplement” les choses apprises récemment;
 * Pour mettre en place une technique de recherche de l’information, et approfondir les sujets étudiés;
 * Accélérer et faciliter mon apprentissage, cela va me permettre d’avoir un lieu virtuel où sont stockés toutes les informations dont j’ai eu besoin un jour ou l’autre dans ma vie de dev; 
@@ -17,11 +18,9 @@ tags: ['']
 * Pour travailler l’écriture et l’orthographe, qualité qui est très très importante à mes yeux, alors je vais faire au mieux… sans jamais trop me prendre la tête, soit juste indulgent quand tu repères une énormité et dis-le-moi c’est avec plaisir que je corrigerai :)
 
 <br>
-<br>
 
 ## Pourquoi je me lance dans cette aventure ?
 
-<br>
 Je me présente brièvement, Quentin, jeune développeur web depuis approximativement 1 an. Initialement diplômé d’une filière commerciale et marketing, j’ai souhaité me réorienté vers un domaine qui m’attire, depuis déjà un petit moment. J’ai donc effectué un bootcamp d’une durée de 6 mois pour obtenir un diplôme de Développeur Web et Application Mobile. 
 
 Au programme ? HTML CSS et JS ont forcément étaient de la partie, on a vu aussi PHP comme langage back-end, même si je t’avoue ne pas avoir du tout accroché. J’ai préféré m’orienter vers Ruby, j’ai même effectué mon stage dans une start-up qui bosser uniquement avec l’écosystème Ruby (Ruby-on-Rails). J’ai pris beaucoup de plaisir à développer avec ce langage. 
