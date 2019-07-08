@@ -1,7 +1,7 @@
 ---
-slug: Dhg
+slug: JavaScript-préambule
 date: 2019-05-24T10:42:21.217Z
-title: Fhg
+title: Javascript Préambule
 ---
 \# JavaScript par la pratique : Section 1 
 
