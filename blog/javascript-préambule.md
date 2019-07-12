@@ -41,7 +41,7 @@ Cette conversion peut être très utile dans certains cas, quand la valeur atten
 * NaN;
 * une chaîne de caractère vide.
 
-### Le mot clé typeof
+Le mot clé typeof
 
 ::typeof::  permet de connaitre le type d’une variable, à utiliser sans modération pour toujours être sur de qui est quoi.
 
@@ -56,25 +56,25 @@ Pour avoir un petit environnement de développement pour manipuler le JavaScript
 Tout d’abord se créer un dossier sur son ordinateur, et s’y rendre à l’aide du terminal.
 
 ```
-*Dans notre dossier en question, à l’aide du terminal*
+_Dans notre dossier en question, à l’aide du terminal_
 ```
 
-> `$ npm init`  
+> `$ npm init` 
 
 ```
-*Accepter par défaut tous les paramètres; création d’un package.json*
+_Accepter par défaut tous les paramètres; création d’un package.json_
 ```
 
 > `$ npm i live-server`  
 
 ```
-*Création d’un dossier node_modules, installation de live-server*
+_Création d’un dossier node_modules, installation de live-server_
 
-*Ajouter à package.json dans l’objet de la clé “script”*
+_Ajouter à package.json dans l’objet de la clé “script”_
 ```
 
 > `"start": "live-server"`  
 
 ```
-*Désormais, avec la commande start dans le terminal, un serveur sera lancé sur le port 8080*
+_Désormais, avec la commande start dans le terminal, un serveur sera lancé sur le port 8080, et bénéficiera du live reload_
 ```
