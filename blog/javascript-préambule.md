@@ -3,44 +3,37 @@ slug: javascript-préambule
 date: 2019-07-12T10:37:32.228Z
 title: 'JavaScript: Préambule'
 ---
-# JavaScript par la pratique : Section 1 
+# JavaScript par la pratique : Section 1
 
+![developper](/assets/jefferson-santos-450403-unsplash.jpg "developper")
 
-## Section 1 : Préambule 
-### Templates string 
+## Section 1 : Préambule
 
-Ou backticks `` => concaténer  notre contenu sans avoir recours à l’opérateur “+”.
+### Templates string
 
-```
-var name = 'Quentin';
-var car = 'cette voiture appartient à ${name};
+Ou backticks  => concaténer  notre contenu sans avoir recours à l’opérateur “+”.
 
-console.log(car);
-// cette voiture appartient à Quentin
-```
+![code](/assets/1.jpg "code")
 
 Les bacticks permettent aussi d’insérer des tabulations et retours à la ligne dans notre variable => templates string
 
 ### Conversion en booléen à l’aide de l’opérateur “!!”
 
-“!!” se base sur le principe de *truthy* et *falsy*  pour convertir une valeur en booléen. 
+“!!” se base sur le principe de _truthy_ et _falsy_  pour convertir une valeur en booléen. 
 Cette conversion peut être très utile dans certains cas, quand la valeur attendu est un booléen et non un nombre par exemple.
 
-```
-var isYoung = 9;
+![code](/assets/2.jpg "code")
 
-!!isYoung;
-// true
-```
+~Considérée _truthy_, dans un if () par exemple:~
 
-~Considérée *truthy*, dans un if () par exemple:~
 * true;
 * un objet;
 * un tableau;
 * un nombre différent de 0;
 * Infinity et  -Infinity.
 
-~Considérée *falsy*, dans un if () par exemple:~
+~Considérée _falsy_, dans un if () par exemple:~
+
 * false;
 * null;
 * undefined;
@@ -52,26 +45,36 @@ var isYoung = 9;
 
 ::typeof::  permet de connaitre le type d’une variable, à utiliser sans modération pour toujours être sur de qui est quoi.
 
+![code](/assets/3.jpg "code")
+
 À noter que le typeof d’un tableau en JavaScript est un objet. En JavaScript, techniquement les tableaux sont des objets; ils bénéficient juste de comportement et de capacités spéciales.
 
-### Configurer son environnement de développement 
+### Configurer son environnement de développement
 
 Pour avoir un petit environnement de développement pour manipuler le JavaScript sans avoir à se rendre dans l’inspecteur d’une page web.
 
 Tout d’abord se créer un dossier sur son ordinateur, et s’y rendre à l’aide du terminal.
 
-	*Dans notre dossier en question, à l’aide du terminal*
+```
+*Dans notre dossier en question, à l’aide du terminal*
+```
 
 > `$ npm init`  
 
-	*Accepter par défaut tous les paramètres; création d’un package.json*
+```
+*Accepter par défaut tous les paramètres; création d’un package.json*
+```
 
 > `$ npm i live-server`  
-	
-	*Création d’un dossier node_modules, installation de live-server*
 
-	*Ajouter à package.json dans l’objet de la clé “script”*
+```
+*Création d’un dossier node_modules, installation de live-server*
+
+*Ajouter à package.json dans l’objet de la clé “script”*
+```
 
 > `"start": "live-server"`  
 
-	*Désormais, avec la commande start dans le terminal, un serveur sera lancé sur le port 8080*
+```
+*Désormais, avec la commande start dans le terminal, un serveur sera lancé sur le port 8080*
+```
