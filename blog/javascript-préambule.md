@@ -11,7 +11,7 @@ title: 'JavaScript: Préambule'
 
 ### Templates string
 
-Ou backticks  => concaténer  notre contenu sans avoir recours à l’opérateur “+”.
+Connu aussi sous le nom de [**backticks**](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Littéraux_gabarits)  => concaténer  notre contenu sans avoir recours à l’opérateur “+”.
 
 ![code](/assets/1.jpg "code")
 
@@ -24,7 +24,7 @@ Cette conversion peut être très utile dans certains cas, quand la valeur atten
 
 ![code](/assets/2.jpg "code")
 
-~Considérée _truthy_, dans un if () par exemple:~
+Considérée _truthy_, dans un if () par exemple:
 
 * true;
 * un objet;
@@ -32,7 +32,7 @@ Cette conversion peut être très utile dans certains cas, quand la valeur atten
 * un nombre différent de 0;
 * Infinity et  -Infinity.
 
-~Considérée _falsy_, dans un if () par exemple:~
+Considérée _falsy_, dans un if () par exemple:
 
 * false;
 * null;
@@ -41,13 +41,13 @@ Cette conversion peut être très utile dans certains cas, quand la valeur atten
 * NaN;
 * une chaîne de caractère vide.
 
-Le mot clé typeof
+**Le mot clé typeof**
 
-::typeof::  permet de connaitre le type d’une variable, à utiliser sans modération pour toujours être sur de qui est quoi.
+**typeof**  permet de connaitre le type d’une variable, à utiliser sans modération pour toujours être sur de qui est quoi.
 
 ![code](/assets/3.jpg "code")
 
-À noter que le typeof d’un tableau en JavaScript est un objet. En JavaScript, techniquement les tableaux sont des objets; ils bénéficient juste de comportement et de capacités spéciales.
+À noter que le **typeof** d’un tableau en JavaScript est un objet. En JavaScript, techniquement les tableaux sont des objets; ils bénéficient juste de comportement et de capacités spéciales.
 
 ### Configurer son environnement de développement
 
@@ -55,26 +55,17 @@ Pour avoir un petit environnement de développement pour manipuler le JavaScript
 
 Tout d’abord se créer un dossier sur son ordinateur, et s’y rendre à l’aide du terminal.
 
-```
-_Dans notre dossier en question, à l’aide du terminal_
-```
+* _Dans notre dossier en question, à l’aide du terminal_
 
 > `$ npm init` 
 
-```
-_Accepter par défaut tous les paramètres; création d’un package.json_
-```
+* _Accepter par défaut tous les paramètres; création d’un package.json_
 
 > `$ npm i live-server`  
 
-```
-_Création d’un dossier node_modules, installation de live-server_
-
-_Ajouter à package.json dans l’objet de la clé “script”_
-```
+* _Création d’un dossier node_modules, installation de live-server_
+  _Ajouter à package.json dans l’objet de la clé “script”_
 
 > `"start": "live-server"`  
 
-```
-_Désormais, avec la commande start dans le terminal, un serveur sera lancé sur le port 8080, et bénéficiera du live reload_
-```
+* _Désormais, avec la commande start dans le terminal, un serveur sera lancé sur le port 8080, et bénéficiera du live reload_
